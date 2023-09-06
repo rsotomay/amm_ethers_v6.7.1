@@ -1,10 +1,10 @@
-import Navbar from 'react-bootstrap/Navbar';
+import Navbar from "react-bootstrap/Navbar";
 
-import logo from '../logo.png';
+import logo from "../logo_GSNT.png";
 
 const Navigation = ({ account }) => {
   return (
-    <Navbar className='my-3'>
+    <Navbar className="my-3">
       <img
         alt="logo"
         src={logo}
@@ -14,12 +14,10 @@ const Navigation = ({ account }) => {
       />
       <Navbar.Brand href="#">Dapp University Template</Navbar.Brand>
       <Navbar.Collapse className="justify-content-end">
-        <Navbar.Text>
-          {account}
-        </Navbar.Text>
+        <Navbar.Text>{account}</Navbar.Text>
       </Navbar.Collapse>
     </Navbar>
   );
-}
+};
 
 export default Navigation;
